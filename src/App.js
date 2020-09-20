@@ -20,9 +20,7 @@ function App() {
     >
       <AppContext.Provider value={loginUserValue}>
         <Header />
-        <div>
-          <Main />
-        </div>
+        <Main />
       </AppContext.Provider>
     </div>
   );

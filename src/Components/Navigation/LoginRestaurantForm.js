@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { CloseLoginMenu, AppContext } from "../AppContext";
 
+// Simple registration for on login menu, this is for restaurant login
 export default function LoginRestaurantForm() {
   const { setShowUserMenu } = useContext(CloseLoginMenu);
   const { setLoginUser } = useContext(AppContext);

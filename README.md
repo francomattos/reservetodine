@@ -1,5 +1,9 @@
-# Reserve to Dine
+# React Page - Reserve to Dine
 
 This is a group project for Human Computer Interfaces at Daytona State College.
 
-Edited by Hali
+Hali provided some content for the code, thanks Hali!
+
+This web page was not required for the class, but was fun to implement parts of our UI to a functional page. The semester ended and the page was not completed, it is left at a very rough stage. I may revisit it in the future.
+
+This page utilizes Tailwinds for styling

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../AppContext";
 
+// Logs user out of app by setting value to empty
 export default function UserLogout() {
   const { loginUser, setLoginUser } = useContext(AppContext);
   let userName;

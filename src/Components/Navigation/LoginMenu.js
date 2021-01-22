@@ -4,6 +4,7 @@ import LoginUserMenu from "./LoginUserMenu";
 import { AppContext, CloseLoginMenu } from "../AppContext";
 import UserLogout from "./UserLogout";
 
+// Handles the login menu that appears upon clicking the Login button
 function LoginMenu() {
   const { loginUser } = useContext(AppContext);
   const [showUserMenu, setShowUserMenu] = useState(false);
@@ -13,7 +14,7 @@ function LoginMenu() {
     setShowUserMenu,
   ]);
 
-  //Handle clicking outside menu to close it.
+  // Handle clicking outside menu to close it.
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, false);
     return () => {
@@ -21,13 +22,14 @@ function LoginMenu() {
     };
   }, []);
 
+  // Grabs clicking outside the box event
   const handleClickOutside = (event) => {
     if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
       setShowUserMenu(false);
     }
   };
 
-  //Creating transition effects for user and restaurant login
+  // Creating transition effects for user and restaurant login
   const userMenuTransition = useTransition(showUserMenu, null, {
     from: { opacity: 0, transform: "translateY(-100%)" },
     enter: { opacity: 1, transform: "translateY(0)" },

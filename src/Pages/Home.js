@@ -1,12 +1,18 @@
 import React from "react";
-//Hali - added the title text from the mock ups, and added the large version of the logo.
+// Hali - added the title text from the mock ups, and added the large version of the logo.
 function Home() {
   return (
     <table>
       <tr>
         <td colSpan="2">
           <div class="ml-48">
-            <img class="ml-64" src="logolarge.png" alt="Large Logo" height="400" width="400" />
+            <img
+              class="ml-64"
+              src="logolarge.png"
+              alt="Large Logo"
+              height="400"
+              width="400"
+            />
           </div>
         </td>
       </tr>

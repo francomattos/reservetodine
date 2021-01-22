@@ -2,6 +2,7 @@ import React from "react";
 import LoginRestaurantForm from "./LoginRestaurantForm";
 import LoginUserForm from "./LoginUserForm";
 
+// This is the element for displaying the user menu itself.
 function LoginUserMenu() {
   const [openTab, setOpenTab] = React.useState(1);
   return (

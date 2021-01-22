@@ -1,3 +1,5 @@
+// This handles user login, needs to be finilized
+
 export const Login = async (loginParam) => {
   return {
     Type: loginParam.type,
